@@ -1,5 +1,7 @@
 # technical_factors — 技术面因子
 
+**所需套餐**：PRO 及以上（低档位调用返回 403）
+
 ## SDK 方法
 
 ```python

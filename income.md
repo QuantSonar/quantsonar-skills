@@ -1,5 +1,7 @@
 # income — 利润表
 
+**所需套餐**：Starter 及以上（低档位调用返回 403）
+
 ## SDK 方法
 
 ```python

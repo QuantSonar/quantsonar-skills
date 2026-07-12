@@ -1,5 +1,7 @@
 # trade_calendar — 交易日历（默认上交所）
 
+**所需套餐**：FREE（免费档即可用）
+
 ## SDK 方法
 
 ```python

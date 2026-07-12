@@ -1,5 +1,7 @@
 # industries — 申万行业分类
 
+**所需套餐**：FREE（免费档即可用）
+
 ## SDK 方法
 
 ```python

@@ -1,5 +1,7 @@
 # daily — 日线行情（OHLC）
 
+**所需套餐**：FREE（免费档即可用）
+
 ## SDK 方法
 
 ```python

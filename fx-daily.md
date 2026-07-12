@@ -1,5 +1,7 @@
 # fx_daily — 外汇日线（默认 USDCNH）
 
+**所需套餐**：FREE（免费档即可用）
+
 ## SDK 方法
 
 ```python

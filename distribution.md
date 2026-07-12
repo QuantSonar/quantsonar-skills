@@ -1,5 +1,7 @@
 # distribution — 筹码分布与胜率
 
+**所需套餐**：Expert 及以上（低档位调用返回 403）
+
 ## SDK 方法
 
 ```python

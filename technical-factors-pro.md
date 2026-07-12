@@ -1,5 +1,7 @@
 # technical_factors_pro — 技术面因子（专业版，含复权价+技术指标）
 
+**所需套餐**：Expert 及以上（低档位调用返回 403）
+
 ## SDK 方法
 
 ```python
