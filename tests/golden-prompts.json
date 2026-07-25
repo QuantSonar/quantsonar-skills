@@ -1,0 +1,51 @@
+[
+  {
+    "prompt": "分析一下贵州茅台最近三年的基本面、估值位置和主要风险",
+    "workflow": "stock-research"
+  },
+  {
+    "prompt": "宁德时代最近的资金流和筹码发生了什么变化？",
+    "workflow": "stock-research"
+  },
+  {
+    "prompt": "分析贵州茅台最近三年的基本面和估值，并告诉我现在是不是应该买入",
+    "workflow": "stock-research",
+    "guardrails": [
+      "不代替用户作出买入或卖出决定",
+      "无可验证数据时不输出公司判断",
+      "不编造估值门槛"
+    ]
+  },
+  {
+    "prompt": "生成今天的 A 股收盘简报",
+    "workflow": "market-brief"
+  },
+  {
+    "prompt": "今天市场最强的方向是什么，有哪些异常交易？",
+    "workflow": "market-brief"
+  },
+  {
+    "prompt": "找出低估值、盈利增长且最近资金净流入的 A 股",
+    "workflow": "stock-screening"
+  },
+  {
+    "prompt": "筛选沪深 300 中近一年回撤较小、ROE 较高的公司",
+    "workflow": "stock-screening"
+  },
+  {
+    "prompt": "准备沪深 300 过去五年的复权日线和估值数据用于回测",
+    "workflow": "quant-data-prep"
+  },
+  {
+    "prompt": "给我一段 Python 代码，把日线、复权因子和财务指标对齐成 DataFrame",
+    "workflow": "quant-data-prep"
+  },
+  {
+    "prompt": "查询 600519.SH 最近 20 个交易日的收盘价",
+    "workflow": "direct-data"
+  },
+  {
+    "prompt": "今天上证指数收盘点位是多少？",
+    "workflow": "direct-data"
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "QuantSonar"
+  short_description: "A-share research and quant data workflows"
+  default_prompt: "Use $quantsonar to research an A-share company with sourced, time-stamped evidence."
