@@ -14,7 +14,7 @@ qs.fx_daily(symbol=None, start_date=None, end_date=None, trade_date=None)
 
 | 参数 | 说明 |
 |---|---|
-| `symbol` | 代码原样匹配（板块/外汇/港股等）；缺省 USDCNH.FXCM |
+| `symbol` | 代码原样匹配（ETF/板块/外汇/港股等）；缺省 USDCNH.FXCM |
 | `start_date` | 起始日期 YYYYMMDD |
 | `end_date` | 结束日期 YYYYMMDD |
 | `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |

@@ -1,11 +1,11 @@
-# concept_members — 概念/题材板块成分股
+# portfolio — ETF 持仓明细
 
 **所需套餐**：PRO 及以上（低档位每天可试用 2 次）
 
 ## SDK 方法
 
 ```python
-qs.concept_members(symbol=None, con_symbol=None, start_date=None, end_date=None, trade_date=None)
+qs.portfolio(symbol=None, con_symbol=None, start_date=None, end_date=None, ann_date=None)
 ```
 
 返回 `pandas.DataFrame`；无数据时返回空 DataFrame。
@@ -18,20 +18,24 @@ qs.concept_members(symbol=None, con_symbol=None, start_date=None, end_date=None,
 | `con_symbol` | 成分证券代码（带后缀），如 000001.SZ |
 | `start_date` | 起始日期 YYYYMMDD |
 | `end_date` | 结束日期 YYYYMMDD |
-| `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
+| `ann_date` | 公告日期 YYYYMMDD |
 
 ## 返回字段
 
 | 字段 | 说明 |
 |---|---|
-| `trade_date` | 交易日期 |
-| `symbol` | 概念代码 |
-| `con_symbol` | 成分股代码 |
-| `name` | 成分股名称 |
+| `symbol` | ETF代码 |
+| `ann_date` | 公告日期 |
+| `end_date` | 报告期 |
+| `con_symbol` | 持仓证券代码 |
+| `mkv` | 持仓市值(元) |
+| `amount` | 持仓数量(股) |
+| `stk_mkv_ratio` | 占股票市值比 |
+| `stk_float_ratio` | 占流通股本比例 |
 
 ## 示例
 
 ```python
-df = qs.concept_members(symbol="600519.SH")
+df = qs.portfolio(symbol="600519.SH")
 print(df.head())
 ```

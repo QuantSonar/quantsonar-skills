@@ -23,6 +23,13 @@ MCP 工具名与 Python SDK 方法名一致。每个方法的完整参数和返�
 | `limit_list` | 涨跌停榜单 | 行情数据 | PRO | [查看](endpoints/limit-list.md) |
 | `concepts` | 概念/题材板块指数 | 行情数据 | PRO | [查看](endpoints/concepts.md) |
 | `concept_members` | 概念/题材板块成分股 | 行情数据 | PRO | [查看](endpoints/concept-members.md) |
+| `basic` | ETF 基础信息 | ETF | FREE | [查看](endpoints/basic.md) |
+| `etf_daily` | ETF 日线行情 | ETF | FREE | [查看](endpoints/etf-daily.md) |
+| `etf_adj_factor` | ETF 复权因子 | ETF | FREE | [查看](endpoints/etf-adj-factor.md) |
+| `nav` | ETF 净值 | ETF | Starter | [查看](endpoints/nav.md) |
+| `portfolio` | ETF 持仓明细 | ETF | PRO | [查看](endpoints/portfolio.md) |
+| `share_size` | ETF 份额与规模 | ETF | Starter | [查看](endpoints/share-size.md) |
+| `tracking_indices` | ETF 跟踪指数基础信息 | ETF | Starter | [查看](endpoints/tracking-indices.md) |
 | `moneyflow` | 个股资金流向 | 资金流向 | PRO | [查看](endpoints/moneyflow.md) |
 | `moneyflow_hsgt` | 沪深港通资金流向（全市场） | 资金流向 | PRO | [查看](endpoints/moneyflow-hsgt.md) |
 | `northbound_holdings` | 北向持股明细 | 资金流向 | PRO | [查看](endpoints/northbound-holdings.md) |
