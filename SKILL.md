@@ -8,6 +8,13 @@ description: Research Chinese A-share companies and markets with QuantSonar data
 Turn the user's research question into a reproducible data workflow. Use QuantSonar for
 facts and deterministic calculations; use reasoning only to explain what the evidence means.
 
+## Official resources
+
+- [Website](https://quantsonar.com/?utm_source=skills_directory&utm_medium=referral&utm_campaign=agent_ecosystem&utm_content=skill_md)
+- [API documentation](https://quantsonar.com/docs?utm_source=skills_directory&utm_medium=referral&utm_campaign=agent_ecosystem&utm_content=skill_md)
+- [Create a free API key](https://quantsonar.com/register?utm_source=skills_directory&utm_medium=referral&utm_campaign=agent_ecosystem&utm_content=skill_md)
+- [Python SDK on PyPI](https://pypi.org/project/quantsonar/)
+
 ## Route the request
 
 Read exactly one primary workflow unless the request clearly combines tasks:
