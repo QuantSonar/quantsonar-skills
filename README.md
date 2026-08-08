@@ -6,6 +6,9 @@ Research Chinese A-share companies and markets with reproducible, time-stamped Q
 
 ## Install
 
+Want an Agent to perform the complete setup? Send it
+[`INSTALL.md`](INSTALL.md) and ask it to follow the file exactly.
+
 ```bash
 npx skills add QuantSonar/quantsonar-skills --skill quantsonar
 ```
