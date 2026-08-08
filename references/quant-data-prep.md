@@ -3,6 +3,15 @@
 Use this workflow to create a reproducible dataset or code path for research, factors,
 backtests, or model training.
 
+## System contract
+
+- **Stage:** cross-cutting evidence foundation and Stage 7 review support
+- **Consumes:** `research_mandate` or explicit dataset/test contract
+- **Produces:** reproducible dataset contract and quality report for `evidence_pack` or
+  `research_review`
+- **Gate:** supports G3 or G7 in [research-system.md](research-system.md)
+- **Permitted next stages:** hypothesis test, thesis review, or process review
+
 ## Define the dataset contract
 
 Resolve or explicitly default:

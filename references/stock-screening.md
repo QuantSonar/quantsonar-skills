@@ -3,6 +3,14 @@
 Use this workflow when the user asks to find, rank, filter, or build a candidate pool. A
 screen produces research candidates; it does not produce investment recommendations.
 
+## System contract
+
+- **Stage:** 2. Discover
+- **Consumes:** `research_mandate` and optional `market_context`
+- **Produces:** `candidate_pool`
+- **Gate:** G2 in [research-system.md](research-system.md)
+- **Permitted next stages:** one evidence workflow per surviving candidate or research review
+
 ## Translate the request into explicit rules
 
 Build a visible rule table before running the screen:

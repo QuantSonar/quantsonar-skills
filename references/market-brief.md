@@ -3,6 +3,14 @@
 Use this workflow for a daily, intraday, opening, or closing A-share overview. Optimize for a
 two-minute read and distinguish actionable changes from background noise.
 
+## System contract
+
+- **Stage:** 1. Observe; may refresh context during Stage 6 monitoring
+- **Consumes:** `research_mandate` or an explicit universe/date request
+- **Produces:** `market_context`
+- **Gate:** G1 in [research-system.md](research-system.md)
+- **Permitted next stages:** candidate discovery, event monitoring, or research review
+
 ## Establish the time boundary
 
 1. Resolve the requested date with `trade_calendar`.

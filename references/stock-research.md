@@ -3,6 +3,28 @@
 Use this workflow for a single listed company. Produce an evidence-led research snapshot,
 not a generic company introduction.
 
+## System contract
+
+- **Stage:** 3. Investigate
+- **Consumes:** `research_mandate` plus a candidate or explicit company request
+- **Produces:** company, financial, valuation, and risk sections of an `evidence_pack`
+- **Gate:** contributes to G3 in [research-system.md](research-system.md)
+- **Permitted next stages:** add sector or complementary evidence, then `thesis-review`
+
+## Connect company and sector evidence
+
+When peer context can materially change the answer, call
+[sector-research.md](sector-research.md) for the company's dated industry, concept, or chosen
+benchmark group. Compare compatible periods and distinguish:
+
+- company-specific evidence from sector-wide changes;
+- price leadership from operating leadership;
+- the company's valuation from the sector median, dispersion, and coverage;
+- a company event from a shared sector catalyst.
+
+Do not require sector analysis for a narrow factual company request, and do not infer peer
+quality from industry membership alone.
+
 ## Resolve the question
 
 Identify:

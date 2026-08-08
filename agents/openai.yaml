@@ -1,4 +1,4 @@
 interface:
   display_name: "QuantSonar"
-  short_description: "A-share research and quant data workflows"
-  default_prompt: "Use $quantsonar to research an A-share company with sourced, time-stamped evidence."
+  short_description: "Individual-stock and sector research system"
+  default_prompt: "Use $quantsonar to research an individual stock or a sector, produce the right versioned artifact, validate its stage gate, and preserve sourced, time-stamped evidence across the public-data research loop."

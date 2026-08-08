@@ -11,10 +11,43 @@ from metrics import calculate
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_WORKFLOWS = {
     "stock-research",
+    "sector-research",
+    "research-mandate",
     "market-brief",
     "stock-screening",
+    "technical-analysis",
+    "capital-behavior",
+    "etf-research",
+    "dividend-research",
+    "event-monitor",
+    "index-research",
+    "investment-lifecycle",
+    "thesis-review",
+    "research-review",
+    "market-feasibility",
     "quant-data-prep",
     "direct-data",
+}
+
+REQUIRED_METHODS = {
+    "daily", "fundamentals", "adj_factor", "technical_factors",
+    "technical_factors_pro", "margin", "block_trade", "top_list", "top_inst",
+    "shareholders", "holder_trade", "limit_list", "concepts", "concept_members",
+    "moneyflow", "moneyflow_hsgt", "northbound_holdings", "southbound_holdings",
+    "distribution", "fx_daily", "index_daily", "index_weight", "basic",
+    "etf_daily", "etf_adj_factor", "nav", "portfolio", "share_size",
+    "tracking_indices", "indicators", "income", "balance_sheet", "cash_flow",
+    "forecast", "express", "analyst_reports", "audit", "main_business",
+    "disclosure_date", "dividend", "stocks", "industries", "trade_calendar",
+    "realtime", "news_flash",
+}
+
+SYSTEM_WORKFLOW_FILES = {
+    "research-mandate", "market-brief", "stock-screening", "stock-research",
+    "sector-research",
+    "technical-analysis", "capital-behavior", "etf-research", "dividend-research",
+    "event-monitor", "index-research", "quant-data-prep", "thesis-review",
+    "market-feasibility", "research-review",
 }
 
 
@@ -54,6 +87,33 @@ def validate_golden_prompts() -> None:
     ), "missing adversarial investment-decision case"
 
 
+def validate_matrix_coverage() -> None:
+    text = (ROOT / "references" / "skill-matrix.md").read_text(encoding="utf-8")
+    covered = set(re.findall(r"`([a-z][a-z0-9_]*)`", text))
+    assert REQUIRED_METHODS <= covered, (
+        f"skill matrix missing methods: {sorted(REQUIRED_METHODS - covered)}"
+    )
+
+
+def validate_research_system() -> None:
+    text = (ROOT / "references" / "research-system.md").read_text(encoding="utf-8")
+    artifacts = {
+        "research_mandate", "market_context", "candidate_pool", "evidence_pack",
+        "thesis_card", "feasibility_card", "change_log", "research_review",
+    }
+    for artifact in artifacts:
+        assert f"`{artifact}`" in text, f"research system missing artifact: {artifact}"
+    for gate in range(8):
+        assert f"G{gate}" in text, f"research system missing gate: G{gate}"
+    assert "Individual-stock research" in text, "research system missing stock entrance"
+    assert "Sector research" in text, "research system missing sector entrance"
+
+    for name in SYSTEM_WORKFLOW_FILES:
+        workflow = (ROOT / "references" / f"{name}.md").read_text(encoding="utf-8")
+        assert "## System contract" in workflow, f"workflow missing system contract: {name}"
+        assert "research-system.md" in workflow, f"workflow not linked to system: {name}"
+
+
 def validate_metrics() -> None:
     result = calculate(
         {
@@ -71,6 +131,8 @@ def main() -> None:
     validate_frontmatter()
     validate_links()
     validate_golden_prompts()
+    validate_matrix_coverage()
+    validate_research_system()
     validate_metrics()
     print("QuantSonar Skill validation passed")
 
