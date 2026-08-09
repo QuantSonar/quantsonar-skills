@@ -12,12 +12,12 @@ qs.index_daily(symbol=None, start_date=None, end_date=None, trade_date=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 指数代码（带后缀），如 000300.SH；缺省 000001.SH |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 指数代码（带后缀），如 000300.SH；缺省 000001.SH |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `trade_date` | `string` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
 
 ## 返回字段
 
@@ -38,6 +38,6 @@ qs.index_daily(symbol=None, start_date=None, end_date=None, trade_date=None)
 ## 示例
 
 ```python
-df = qs.index_daily(symbol="600519.SH")
+df = qs.index_daily(symbol='000300.SH')
 print(df.head())
 ```

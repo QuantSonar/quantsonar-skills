@@ -12,13 +12,13 @@ qs.basic(symbol=None, exchange=None, list_status=None, etf_type=None, index_code
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 代码原样匹配（ETF/板块/外汇/港股等） |
-| `exchange` | 交易所：SSE 上交所 / SZSE 深交所 |
-| `list_status` | 上市状态：L 上市 / D 退市 / P 暂停上市 |
-| `etf_type` | ETF 类型，如境内、QDII |
-| `index_code` | 跟踪指数代码（带后缀） |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 代码原样匹配（ETF/板块/外汇/港股等） |
+| `exchange` | `string` | 交易所：SSE 上交所 / SZSE 深交所 |
+| `list_status` | `string` | 上市状态：L 上市 / D 退市 / P 暂停上市 |
+| `etf_type` | `string` | ETF 类型，如境内、QDII |
+| `index_code` | `string` | 跟踪指数代码（带后缀） |
 
 ## 返回字段
 
@@ -42,6 +42,6 @@ qs.basic(symbol=None, exchange=None, list_status=None, etf_type=None, index_code
 ## 示例
 
 ```python
-df = qs.basic(symbol="600519.SH")
+df = qs.basic(symbol='510300.SH')
 print(df.head())
 ```

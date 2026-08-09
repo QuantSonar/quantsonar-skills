@@ -12,13 +12,13 @@ qs.limit_list(symbol=None, start_date=None, end_date=None, limit_type=None, trad
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `limit_type` | 涨跌停类型：U 涨停 / D 跌停 / Z 炸板 |
-| `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `limit_type` | `string` | 涨跌停类型：U 涨停 / D 跌停 / Z 炸板 |
+| `trade_date` | `string` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
 
 ## 返回字段
 
@@ -46,6 +46,6 @@ qs.limit_list(symbol=None, start_date=None, end_date=None, limit_type=None, trad
 ## 示例
 
 ```python
-df = qs.limit_list(symbol="600519.SH")
+df = qs.limit_list(symbol='600519.SH')
 print(df.head())
 ```

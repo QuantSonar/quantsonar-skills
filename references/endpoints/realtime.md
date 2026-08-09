@@ -14,9 +14,9 @@ qs.realtime(symbol=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码，逗号分隔可批量（至多 200 个）；不传返回全市场 |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码，逗号分隔可批量（至多 200 个）；不传返回全市场 |
 
 ## 返回字段
 
@@ -37,6 +37,6 @@ qs.realtime(symbol=None)
 ## 示例
 
 ```python
-df = qs.realtime(symbol="600519.SH")
+df = qs.realtime(symbol='600519.SH,000001.SZ')
 print(df.head())
 ```

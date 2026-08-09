@@ -12,15 +12,15 @@ qs.balance_sheet(symbol=None, start_date=None, end_date=None, period=None, ann_d
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `period` | 报告期 YYYYMMDD（如 20251231 = 2025 年报） |
-| `ann_date` | 公告日期 YYYYMMDD |
-| `report_type` | 报表类型：1 合并报表 / 6 母公司报表 … |
-| `comp_type` | 公司类型（1 一般工商业 / 2 银行 / 3 保险 / 4 证券） |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `period` | `string` | 报告期 YYYYMMDD（如 20251231 = 2025 年报） |
+| `ann_date` | `string` | 公告日期 YYYYMMDD |
+| `report_type` | `string` | 报表类型：1 合并报表 / 6 母公司报表 … |
+| `comp_type` | `string` | 公司类型（1 一般工商业 / 2 银行 / 3 保险 / 4 证券） |
 
 ## 返回字段
 
@@ -61,6 +61,6 @@ qs.balance_sheet(symbol=None, start_date=None, end_date=None, period=None, ann_d
 ## 示例
 
 ```python
-df = qs.balance_sheet(symbol="600519.SH")
+df = qs.balance_sheet(symbol='600519.SH')
 print(df.head())
 ```

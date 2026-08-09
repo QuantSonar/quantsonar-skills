@@ -57,7 +57,7 @@ df = qs.daily(symbol="600519.SH", start_date="20260101")
 3. If neither access path is configured, explain that an API Key is required and point to
 `https://quantsonar.com/register`. Never invent data to complete the answer.
 
-Remote MCP endpoint: `https://quantsonar.com/mcp`, authenticated with the
+Remote MCP endpoint: `https://quantsonar.com/mcp/`, authenticated with the
 `X-API-Key` request header.
 
 ## Execute every workflow

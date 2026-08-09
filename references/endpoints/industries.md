@@ -12,9 +12,9 @@ qs.industries(symbol=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
 
 ## 返回字段
 
@@ -32,6 +32,6 @@ qs.industries(symbol=None)
 ## 示例
 
 ```python
-df = qs.industries(symbol="600519.SH")
+df = qs.industries(symbol='600519.SH')
 print(df.head())
 ```
