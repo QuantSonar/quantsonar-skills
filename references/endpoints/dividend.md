@@ -12,14 +12,14 @@ qs.dividend(symbol=None, start_date=None, end_date=None, record_date=None, ex_da
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `record_date` | 股权登记日 YYYYMMDD |
-| `ex_date` | 除权除息日 YYYYMMDD |
-| `imp_ann_date` | 实施公告日 YYYYMMDD |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `record_date` | `string` | 股权登记日 YYYYMMDD |
+| `ex_date` | `string` | 除权除息日 YYYYMMDD |
+| `imp_ann_date` | `string` | 实施公告日 YYYYMMDD |
 
 ## 返回字段
 
@@ -43,6 +43,6 @@ qs.dividend(symbol=None, start_date=None, end_date=None, record_date=None, ex_da
 ## 示例
 
 ```python
-df = qs.dividend(symbol="600519.SH")
+df = qs.dividend(symbol='600519.SH')
 print(df.head())
 ```

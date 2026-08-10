@@ -12,13 +12,13 @@ qs.portfolio(symbol=None, con_symbol=None, start_date=None, end_date=None, ann_d
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 代码原样匹配（ETF/板块/外汇/港股等） |
-| `con_symbol` | 成分证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `ann_date` | 公告日期 YYYYMMDD |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 代码原样匹配（ETF/板块/外汇/港股等） |
+| `con_symbol` | `string` | 成分证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `ann_date` | `string` | 公告日期 YYYYMMDD |
 
 ## 返回字段
 
@@ -36,6 +36,6 @@ qs.portfolio(symbol=None, con_symbol=None, start_date=None, end_date=None, ann_d
 ## 示例
 
 ```python
-df = qs.portfolio(symbol="600519.SH")
+df = qs.portfolio(symbol='510300.SH', con_symbol='600519.SH')
 print(df.head())
 ```

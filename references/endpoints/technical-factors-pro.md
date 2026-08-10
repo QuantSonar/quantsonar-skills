@@ -12,12 +12,12 @@ qs.technical_factors_pro(symbol=None, start_date=None, end_date=None, trade_date
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `trade_date` | `string` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
 
 ## 返回字段
 
@@ -288,6 +288,6 @@ qs.technical_factors_pro(symbol=None, start_date=None, end_date=None, trade_date
 ## 示例
 
 ```python
-df = qs.technical_factors_pro(symbol="600519.SH")
+df = qs.technical_factors_pro(symbol='600519.SH')
 print(df.head())
 ```

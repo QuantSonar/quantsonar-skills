@@ -12,11 +12,11 @@ qs.analyst_reports(symbol=None, start_date=None, end_date=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
 
 ## 返回字段
 
@@ -49,6 +49,6 @@ qs.analyst_reports(symbol=None, start_date=None, end_date=None)
 ## 示例
 
 ```python
-df = qs.analyst_reports(symbol="600519.SH")
+df = qs.analyst_reports(symbol='600519.SH')
 print(df.head())
 ```

@@ -12,13 +12,13 @@ qs.share_size(symbol=None, start_date=None, end_date=None, trade_date=None, exch
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 代码原样匹配（ETF/板块/外汇/港股等） |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `trade_date` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
-| `exchange` | 交易所：SSE 上交所 / SZSE 深交所 |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 代码原样匹配（ETF/板块/外汇/港股等） |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `trade_date` | `string` | 单个交易日 YYYYMMDD（与 start/end 二选一） |
+| `exchange` | `string` | 交易所：SSE 上交所 / SZSE 深交所 |
 
 ## 返回字段
 
@@ -36,6 +36,6 @@ qs.share_size(symbol=None, start_date=None, end_date=None, trade_date=None, exch
 ## 示例
 
 ```python
-df = qs.share_size(symbol="600519.SH")
+df = qs.share_size(symbol='510300.SH')
 print(df.head())
 ```

@@ -12,12 +12,12 @@ qs.trade_calendar(start_date=None, end_date=None, exchange=None, is_open=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `exchange` | 交易所：SSE 上交所 / SZSE 深交所 |
-| `is_open` | 是否交易日：1 是 / 0 否 |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `exchange` | `string` | 交易所：SSE 上交所 / SZSE 深交所 |
+| `is_open` | `integer` | 是否交易日：1 是 / 0 否 |
 
 ## 返回字段
 

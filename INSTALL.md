@@ -130,7 +130,7 @@ Python SDK 回退。
 ### 方式 A：远程 MCP（推荐）
 
 - 传输类型：Streamable HTTP
-- URL：`https://quantsonar.com/mcp`
+- URL：`https://quantsonar.com/mcp/`
 - 请求头：`X-API-Key: <用户的 API Key>`
 
 使用当前 Agent 官方支持的 MCP 配置界面或命令添加以上服务器。不要猜测不支持的
@@ -139,7 +139,7 @@ Python SDK 回退。
 Claude Code 可以直接执行：
 
 ```bash
-claude mcp add --transport http quantsonar https://quantsonar.com/mcp \
+claude mcp add --transport http quantsonar https://quantsonar.com/mcp/ \
   --header "X-API-Key: qs_你的密钥"
 ```
 
@@ -216,4 +216,3 @@ QuantSonar 安装结果
 ### 查询返回无权限
 
 报告所需数据和当前权限不匹配；不要重复调用同一个接口，也不要用虚构数据补全。
-

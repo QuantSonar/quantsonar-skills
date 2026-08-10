@@ -12,12 +12,12 @@ qs.tracking_indices(symbol=None, start_date=None, end_date=None, pub_date=None)
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 代码原样匹配（ETF/板块/外汇/港股等） |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `pub_date` | 发布日期 YYYYMMDD |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 代码原样匹配（ETF/板块/外汇/港股等） |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `pub_date` | `string` | 发布日期 YYYYMMDD |
 
 ## 返回字段
 
@@ -35,6 +35,6 @@ qs.tracking_indices(symbol=None, start_date=None, end_date=None, pub_date=None)
 ## 示例
 
 ```python
-df = qs.tracking_indices(symbol="600519.SH")
+df = qs.tracking_indices(symbol='000300.SH')
 print(df.head())
 ```

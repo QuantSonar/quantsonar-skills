@@ -12,13 +12,13 @@ qs.indicators(symbol=None, start_date=None, end_date=None, period=None, ann_date
 
 ## 参数
 
-| 参数 | 说明 |
-|---|---|
-| `symbol` | 证券代码（带后缀），如 000001.SZ |
-| `start_date` | 起始日期 YYYYMMDD |
-| `end_date` | 结束日期 YYYYMMDD |
-| `period` | 报告期 YYYYMMDD（如 20251231 = 2025 年报） |
-| `ann_date` | 公告日期 YYYYMMDD |
+| 参数 | 类型 | 说明 |
+|---|---|---|
+| `symbol` | `string` | 证券代码（带后缀），如 000001.SZ |
+| `start_date` | `string` | 起始日期 YYYYMMDD |
+| `end_date` | `string` | 结束日期 YYYYMMDD |
+| `period` | `string` | 报告期 YYYYMMDD（如 20251231 = 2025 年报） |
+| `ann_date` | `string` | 公告日期 YYYYMMDD |
 
 ## 返回字段
 
@@ -57,6 +57,6 @@ qs.indicators(symbol=None, start_date=None, end_date=None, period=None, ann_date
 ## 示例
 
 ```python
-df = qs.indicators(symbol="600519.SH")
+df = qs.indicators(symbol='600519.SH')
 print(df.head())
 ```

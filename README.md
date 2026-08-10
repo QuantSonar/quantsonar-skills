@@ -16,7 +16,7 @@ npx skills add QuantSonar/quantsonar-skills --skill quantsonar
 ## Connect the hosted MCP server
 
 ```bash
-claude mcp add --transport http quantsonar https://quantsonar.com/mcp \
+claude mcp add --transport http quantsonar https://quantsonar.com/mcp/ \
   --header "X-API-Key: qs_your_key"
 ```
 
