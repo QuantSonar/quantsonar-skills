@@ -34,7 +34,7 @@ MCP 工具名与 Python SDK 方法名一致。每个方法的完整参数和返�
 | `moneyflow_hsgt` | 沪深港通资金流向（全市场） | 资金流向 | PRO | [查看](endpoints/moneyflow-hsgt.md) |
 | `northbound_holdings` | 北向持股明细 | 资金流向 | PRO | [查看](endpoints/northbound-holdings.md) |
 | `southbound_holdings` | 南向（港股通）持股明细 | 资金流向 | PRO | [查看](endpoints/southbound-holdings.md) |
-| `distribution` | 筹码分布与胜率 | 筹码分布 | Expert | [查看](endpoints/distribution.md) |
+| `distribution` | 筹码分布与胜率 | 筹码分布 | PRO | [查看](endpoints/distribution.md) |
 | `index_daily` | 指数日线（默认上证综指） | 指数 | FREE | [查看](endpoints/index-daily.md) |
 | `index_weight` | 指数成分与权重 | 指数 | PRO | [查看](endpoints/index-weight.md) |
 | `indicators` | 财务指标 | 财务数据 | PRO | [查看](endpoints/indicators.md) |
